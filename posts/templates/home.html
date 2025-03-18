@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block links %}
+    {% for week in weeks %}
+        <a href="posts/{{ week.date }}">{{ week.date }}</a>
+    {% endfor %}
+{% endblock %}
+
+{% block main_body %}
+
+    <h1>ML Papers From Week Begining {{week.date}}:</h1>
+    {% for paper in papers %}
+        <hr> 
+        <h2>{{ paper.title }}</h2>
+        <a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">Read as pdf</a>
+        <p>{{ paper.summary }}</p>
+    {% endfor %}
+
+{% endblock %}

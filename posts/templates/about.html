@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block links %}
+    {% for week in weeks %}
+        <a href="/posts/{{ week.date }}">{{ week.date }}</a>
+    {% endfor %}
+{% endblock %}
+
+{% block main_body %}
+
+        <h1>About:</h1>
+        <hr>
+        <ul>
+            <li>
+                This project aims to cut through the noise of AI hype/funding cycles, bringing people the great research that is being done in the world of machine learning.
+            </li>
+            <li>
+                Every monday the site will be updated with 10 new research articles. 
+            </li>
+            <li>
+                These give the reader the opportunity to stay up to date with the latest trends in academia and in industry applications of artificial intelligence and machine learning.
+            </li>
+            <p>By Iain Mckirdy</p>
+        </ul>
+
+{% endblock %}
