@@ -1,7 +1,9 @@
 # django-ml-papers
 
 ## Overview
-This Django project automatically updates a list of 10 new machine learning/AI research papers every week. It's designed to keep researchers and enthusiasts informed about the latest developments in the field, instead of relying on clickbait journalism.
+This Django project automatically updates a list of 10 new machine learning/AI research papers every week. It's designed to keep researchers and enthusiasts informed about the latest developments in the field, without having to rely on clickbait articles.
+
+![image](./posts/static/media/frontpage.png)
 
 ## Features
 - Automatically fetches and updates new machine learning/AI papers weekly from arxiv.org.
