@@ -11,7 +11,7 @@ ABSTRACT_LOCATION = 4
 
 def get_data():
     #get current date and dates for the start and end of last week, where papers will be taken from
-    current_date = date.today() - timedelta(1)
+    current_date = date.today()
     period_start = current_date - timedelta(7)
     period_end = current_date - timedelta(1)
     today = current_date.strftime("%d-%m-%Y")
